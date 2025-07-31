@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: bookings-app
+    env: go
+    plan: starter
+    buildCommand: go build -o main ./bookings/cmd/web
+    startCommand: ./main
+    envVars:
+      - key: GO_ENV
+        value: production
+      - key: PORT
+        value: 8080
+      - key: SECRET_KEY
+        sync: false
+    healthCheckPath: /
+    autoDeploy: true
+
+databases:
+  - name: bookings-db
+    databaseName: bookings
+    user: bookings_user
+    plan: starter
+    ipAllowList: [] 
