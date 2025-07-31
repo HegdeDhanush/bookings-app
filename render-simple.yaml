@@ -3,7 +3,7 @@ services:
     name: bookings-app
     env: go
     plan: starter
-    buildCommand: cd bookings && go build -o main ./cmd/web
+    buildCommand: go build -o main ./bookings/cmd/web
     startCommand: ./main
     envVars:
       - key: GO_ENV

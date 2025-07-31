@@ -14,7 +14,7 @@ This guide will deploy your entire Go bookings application to Render without any
 3. Configure:
    - **Name**: `bookings-app`
    - **Environment**: `Go`
-   - **Build Command**: `cd bookings && go build -o main ./cmd/web`
+   - **Build Command**: `go build -o main ./bookings/cmd/web`
    - **Start Command**: `./main`
    - **Plan**: `Free`
 
@@ -74,7 +74,7 @@ Once deployed, you can access:
 
 ### Build Fails
 - Check that all Go dependencies are in `go.mod`
-- Ensure the build command is correct: `cd bookings && go build -o main ./cmd/web`
+- Ensure the build command is correct: `go build -o main ./bookings/cmd/web`
 
 ### Database Connection Fails
 - Verify database is linked to web service
