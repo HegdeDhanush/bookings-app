@@ -3,7 +3,7 @@ services:
     name: bookings-backend
     env: go
     plan: starter
-    buildCommand: go build -o main ./cmd/web
+    buildCommand: go build -o main ./backend-deployment/cmd/web
     startCommand: ./main
     envVars:
       - key: GO_ENV
