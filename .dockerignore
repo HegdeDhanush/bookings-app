@@ -1,0 +1,50 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+*.md
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Test files
+*_test.go
+testdata/
+
+# Frontend files (not needed in backend)
+static/
+templates/
+admin/
+
+# Development files
+run.bat.sample
+run.sh.example
+database.yml.example
+
+# Docker files
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Deployment files
+render.yaml
+netlify.toml
+frontend-deployment.md
+backend-deployment.md 
